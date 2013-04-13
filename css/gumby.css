@@ -1821,6 +1821,10 @@ body .video { width: 100%; position: relative; height: 0; padding-bottom: 56.25%
 
 .close:hover { background: #00d9ff; }
 
-ul.userProfile li { display: inline; }
+ul.inline li { display: inline; }
 
 ul.date li { display: inline; }
+
+.item { height: 100px; width: 100px; display: inline; }
+
+.listDescription { border-bottom: 1px solid whitesmoke; }

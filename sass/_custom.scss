@@ -54,7 +54,7 @@
 
 // CSS
 
-ul.userProfile {
+ul.inline {
 
   li {
     display: inline;
@@ -64,8 +64,18 @@ ul.userProfile {
 
 ul.date {
 
-  li {
-    display: inline;
-  }
+li {
+  display: inline;
+}
 
+}
+
+.item {
+  height: 100px;
+  width: 100px;
+  display: inline;
+}
+
+.listDescription {
+  border-bottom: 1px solid whitesmoke;
 }
