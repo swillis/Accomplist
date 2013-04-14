@@ -35,11 +35,11 @@
 
   <div class="navbar" id="nav1">
     <div class='row'>
-      <h2 class="four columns logo"><a href="#">Accomplist</a></h2>
+      <h2 class="four columns logo"><a href="home.html">Accomplist</a></h2>
       <ul class="eight columns">
         <li><a href="dashboard.html">My Accomplists</a></li>
         <li><a href="#openModal3">Create Accomplist</a></li>
-        <li><a href="#">Extras</a></li>
+        <li><a href="viewListLO.html">Extras</a></li>
         <li><a href="home.html">Log out</a></li>
       </ul>
     </div>
@@ -85,6 +85,37 @@
     </div>
   </div>
 
+  <div id="openModal4" class="modalDialog">
+    <div>
+      <a href="#close" title="Close" class="close">X</a>
+      <h2>Send reward</h2>
+      <p>Food truck tousled fap, biodiesel gastropub helvetica direct trade forage bespoke flexitarian seitan post-ironic sriracha master cleanse.</p>
+      <ul>
+        <li class="field">
+          <input class="email input" id="title" type="text" placeholder="Email address" />
+        </li>
+        <li class="field">
+          <label class="inline" for="description">Message:</label>
+          <textarea class="input textarea" id="description" type="text" placeholder="Congratulations on completing your Accomplist!" rows='4'></textarea>
+        </li>
+        <li class="field">
+          <label class='inline'>When would you like to send the gift? </label>
+          <label class="radio" for="radio1">
+            <input name="radio" id="radio1" value="1" type="radio" checked="checked">
+            <span></span>Now
+          </label>
+          <label class="radio" for="radio2">
+            <input name="radio" id="radio2" value="2" type="radio">
+            <span></span> Later
+          </label>
+        </li>
+        <li>
+          <div class="medium primary btn"><a href="dashboard.html">Submit</a></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
   <div class='row'>
     <div class='four columns centered'>
       <h2>My Accomplist</h2>
@@ -107,7 +138,7 @@
         <div class='nine columns'>
           <h4>Reward name</h4>
           <p>£10.00 <span>(amazon.com)</span></p>
-          <a href="#"><i class='icon-trophy'></i>Send this reward</a>
+          <a href="#openModal4"><i class='icon-trophy'></i>Send this reward</a>
         </div>
       </div>
       <div class='row'>
@@ -115,7 +146,7 @@
         <div class='nine columns'>
           <h4>Reward name</h4>
           <p>£10.00 <span>(amazon.com)</span></p>
-          <a href="#"><i class='icon-trophy'></i>Send this reward</a>
+          <a href="#openModal4"><i class='icon-trophy'></i>Send this reward</a>
         </div>
       </div>
       <div class='row'>
@@ -123,21 +154,34 @@
         <div class='nine columns'>
           <h4>Reward name</h4>
           <p>£10.00 <span>(amazon.com)</span></p>
-          <a href="#"><i class='icon-trophy'></i>Send this reward</a>
+          <a href="#openModal4"><i class='icon-trophy'></i>Send this reward</a>
         </div>
       </div>
     </div>
 
     <div class='four columns push_one'>
       <div class='row'>
-        <h3>Accomplist author</h3>
+        <h3>This is your list</h3>
         <div class='four columns'><img class='image rounded item' src="img/success.png"></div>
-        <div class='six columns'>Mr. Success</div>
+        <div class='six columns'>
+          <p>Mr. Success</p>
+        </div>
       </div>
       <div class='row'>
         <div class='two columns'><a href="#"><i class='icon-plus'></i></a></div>
         <div class='eight columns'>Subscribe to this Accomplist and get notified when username completes his goal.</div>
       </div>
+
+      <div class='row'>
+        <h4>Share your list!</h4>
+        <ul class='inline'>
+          <li><a href=""><i class='icon-facebook-circled'></i></a></li>
+          <li><a href=""><i class='icon-twitter-circled'></i></a></li>
+          <li><a href=""><i class='icon-linkedin-circled'></i></a></li>
+          <li><a href=""><i class='icon-gplus-circled'></i></a></li>
+        </ul>
+      </div>
+
     </div>
   </div>
 

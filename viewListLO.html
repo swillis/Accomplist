@@ -85,81 +85,105 @@
     </div>
   </div>
 
-  <div class='row'>
-    <div class='four columns push_one image photo'>
-      <img src="img/success.png"/>
-    </div>
-    <div class='six columns'>
-      <h2>Mr. Success</h2>
+  <div id="openModal4" class="modalDialog">
+    <div>
+      <a href="#close" title="Close" class="close">X</a>
+      <h2>Send reward</h2>
       <p>Food truck tousled fap, biodiesel gastropub helvetica direct trade forage bespoke flexitarian seitan post-ironic sriracha master cleanse.</p>
-      <ul class='inline'>
-        <li><a href="#"><i class='icon-rss'></i>Subscribe</a></li>
-        <li><a href="#"><i class='icon-mail'></i>Request address</a></li>
-        <li><a href="#"><i class='icon-tools'></i>Settings</a> </li>
+      <ul>
+        <li class="field">
+          <input class="email input" id="title" type="text" placeholder="Email address" />
+        </li>
+        <li class="field">
+          <label class="inline" for="description">Message:</label>
+          <textarea class="input textarea" id="description" type="text" placeholder="Congratulations on completing your Accomplist!" rows='4'></textarea>
+        </li>
+        <li class="field">
+          <label class='inline'>When would you like to send the gift? </label>
+          <label class="radio" for="radio1">
+            <input name="radio" id="radio1" value="1" type="radio" checked="checked">
+            <span></span>Now
+          </label>
+          <label class="radio" for="radio2">
+            <input name="radio" id="radio2" value="2" type="radio">
+            <span></span> Later
+          </label>
+        </li>
+        <li>
+          <div class="medium primary btn"><a href="dashboard.html">Submit</a></div>
+        </li>
       </ul>
     </div>
   </div>
 
   <div class='row'>
-    <h3>Pending Accomplists</h3>
-    <div class='four columns alpha'>
-      <a href="viewList.html"><img src="img/success.png"/></a>
-      <h4>Run a marathon</h4>
-      <ul>
-        <li>Status: <span>In progress</span></li>
-        <li>End date: <span>10/06/2013</span></li>
-        <li>Rewards: <span>5 (3 left to earn)</span></li>
-      </ul>
-    </div>
-    <div class='four columns'>
-      <a href="viewList.html"><img src="img/success.png"/></a>
-      <h4>Run a marathon</h4>
-      <ul>
-        <li>Status: <span>In progress</span></li>
-        <li>End date: <span>10/06/2013</span></li>
-        <li>Rewards: <span>5 (3 left to earn)</span></li>
-      </ul>
-    </div>
-    <div class='four columns omega'>
-      <a href="viewList.html"><img src="img/success.png"/></a>
-      <h4>Run a marathon</h4>
-      <ul>
-        <li>Status: <span>In progress</span></li>
-        <li>End date: <span>10/06/2013</span></li>
-        <li>Rewards: <span>5 (3 left to earn)</span></li>
-      </ul>
+    <div class='four columns centered'>
+      <h2>My Accomplist</h2>
     </div>
   </div>
 
   <div class='row'>
-    <h3>Complete Accomplists</h3>
-    <div class='four columns alpha'>
-      <a href="viewList.html"><img src="img/success.png"/></a>
-      <h4>Run a marathon</h4>
-      <ul>
-        <li>Status: <span>Complete</span></li>
-        <li>Accomplished: <span>10/06/2012</span></li>
-        <li>Rewards: <span>9 (2 left to earn)</span></li>
-      </ul>
-    </div> 
-    <div class='four columns'>
-      <a href="viewList.html"><img src="img/success.png"/></a>
-      <h4>Run a marathon</h4>
-      <ul>
-        <li>Status: <span>Complete</span></li>
-        <li>Accomplished: <span>10/06/2012</span></li>
-        <li>Rewards: <span>9 (2 left to earn)</span></li>
-      </ul>
-    </div> 
-    <div class='four columns omega'>
-      <a href="viewList.html"><img src="img/success.png"/></a>
-      <h4>Run a marathon</h4>
-      <ul>
-        <li>Status: <span>Complete</span></li>
-        <li>Accomplished: <span>10/06/2012</span></li>
-        <li>Rewards: <span>9 (2 left to earn)</span></li>
-      </ul>
-    </div> 
+    <div class='seven columns'>
+      <div>
+        <a href="#"><i class='icon-cog'></i></a>
+        <h3>Run well far.</h3>
+        <ul class='inline'>
+          <li><i class='icon-clock'></i>Status: <span>In progress</span></li>
+          <li><i class='icon-calendar'></i>Completion date: <span>10/06/2013</span></li>
+        </ul>
+        <p class='listDescription'>Food truck tousled fap, biodiesel gastropub helvetica direct trade forage bespoke flexitarian seitan post-ironic sriracha master cleanse.</p>
+      </div>
+      <div class='row'>
+        <div class='three columns'><img class='image rounded item' src="img/success.png"></div>
+        <div class='nine columns'>
+          <h4>Reward name</h4>
+          <p>£10.00 <span>(amazon.com)</span></p>
+          <a href="#openModal4"><i class='icon-trophy'></i>Send this reward</a>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='three columns'><img class='image rounded item' src="img/success.png"></div>
+        <div class='nine columns'>
+          <h4>Reward name</h4>
+          <p>£10.00 <span>(amazon.com)</span></p>
+          <a href="#openModal4"><i class='icon-trophy'></i>Send this reward</a>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='three columns'><img class='image rounded item' src="img/success.png"></div>
+        <div class='nine columns'>
+          <h4>Reward name</h4>
+          <p>£10.00 <span>(amazon.com)</span></p>
+          <a href="#openModal4"><i class='icon-trophy'></i>Send this reward</a>
+        </div>
+      </div>
+    </div>
+
+    <div class='four columns push_one'>
+      <div class='row'>
+        <h3>Accomplist author</h3>
+        <div class='four columns'><img class='image rounded item' src="img/success.png"></div>
+        <div class='six columns'>
+          <p>Mr. Success</p>
+          <p><i class='icon-mail'></i>Request address</p>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='two columns'><a href="#"><i class='icon-plus-circled'></i></a></div>
+        <div class='eight columns'>Subscribe to this Accomplist and get notified when username completes his goal.</div>
+      </div>
+
+      <div class='row'>
+        <h4>Share this list!</h4>
+        <ul class='inline'>
+          <li><a href=""><i class='icon-facebook-circled'></i></a></li>
+          <li><a href=""><i class='icon-twitter-circled'></i></a></li>
+          <li><a href=""><i class='icon-linkedin-circled'></i></a></li>
+          <li><a href=""><i class='icon-gplus-circled'></i></a></li>
+        </ul>
+      </div>
+
+    </div>
   </div>
 
   <!-- JavaScript at the bottom for fast page loading -->
