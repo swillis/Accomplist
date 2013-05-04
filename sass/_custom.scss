@@ -1,6 +1,6 @@
 // Your custom SCSS should be written here...
 
-// Modals.
+// Modals. gay
 
 .modalDialog {
   position: fixed;
@@ -23,6 +23,8 @@
 }
 
 .modalDialog > div {
+  // max-height: 200px;
+  // overflow-y: auto;
   width: 600px;
   position: relative;
   margin: 10% auto;
