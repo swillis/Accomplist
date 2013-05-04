@@ -35,7 +35,7 @@
 
   <div class="navbar" id="nav1">
     <div class='row'>
-      <h2 class="four columns logo"><a href="home.html">Accomplist</a></h2>
+      <h2 class="four columns logo"><a class='title' href="home.html"><i class='icon-menu'></i>Accomplist</a></h2>
       <ul class="eight columns">
         <li><a href="dashboard.html">My Accomplists</a></li>
         <li><a href="#openModal3">Create Accomplist</a></li>
@@ -48,35 +48,98 @@
   <div id="openModal3" class="modalDialog">
     <div>
       <a href="#close" title="Close" class="close">X</a>
-      <h2>Create a new Accomplist</h2>
-      <p>Food truck tousled fap, biodiesel gastropub helvetica direct trade forage bespoke flexitarian seitan post-ironic sriracha master cleanse.</p>
+      <div class='content'>
+        <h2>Create a new Accomplist</h2>
+        <p>Food truck tousled fap, biodiesel gastropub helvetica direct trade forage bespoke flexitarian seitan post-ironic sriracha master cleanse.</p>
+        <ul>
+          <li><label class='inline' for="title">Title:</label></li>
+          <li class="field">
+            <input class="xwide text input" id="title" type="text" placeholder="What are you trying to achieve?" />
+          </li>
+          <li class="field">
+            <label class="inline" for="description">Description:</label>
+            <textarea class="input textarea" id="description" type="text" placeholder="Describe your goal." rows='4'></textarea>
+          </li>
+          <li class="field">
+            <label class='inline'>Status:</label>
+            <label class="radio" for="radio1">
+              <input name="radio" id="radio1" value="1" type="radio" checked="checked">
+              <span></span>In progress
+            </label>
+            <label class="radio" for="radio2">
+              <input name="radio" id="radio2" value="2" type="radio">
+              <span></span> Completed
+            </label>
+          </li>
+          <li class="field">
+            <label>Estimated completion date:</label>
+            <ul class='date'>
+              <li><input class='xnarrow text input' placeholder='DD'></li>
+              <li><input class='xnarrow text input' placeholder='MM'></li>
+              <li><input class='xnarrow text input' placeholder='YYYY'></li>
+            </ul>
+          </li>
+          <li>
+            <div class="medium primary btn"><a href="dashboard.html">Submit</a></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="openModal4" class="modalDialog">
+    <div>
+      <a href="#close" title="Close" class="close">X</a>
+      <div class='content'>
+        <h2>Send reward</h2>
+        <p>Food truck tousled fap, biodiesel gastropub helvetica direct trade forage bespoke flexitarian seitan post-ironic sriracha master cleanse.</p>
+        <ul>
+          <li class="field">
+            <input class="email input" id="title" type="text" placeholder="Email address" />
+          </li>
+          <li class="field">
+            <label class="inline" for="description">Message:</label>
+            <textarea class="input textarea" id="description" type="text" placeholder="Congratulations on completing your Accomplist!" rows='4'></textarea>
+          </li>
+          <li class="field">
+            <label class='inline'>When would you like to send the gift? </label>
+            <label class="radio" for="radio1">
+              <input name="radio" id="radio1" value="1" type="radio" checked="checked">
+              <span></span>Now
+            </label>
+            <label class="radio" for="radio2">
+              <input name="radio" id="radio2" value="2" type="radio">
+              <span></span> Later
+            </label>
+          </li>
+          <li>
+            <div class="medium primary btn"><a href="dashboard.html">Submit</a></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="openModal6" class="modalDialog">
+    <div>
+      <a href="#close" title="Close" class="close">X</a>
+      <h2>Profile settings</h2>
       <ul>
-        <li><label class='inline' for="title">Title:</label></li>
         <li class="field">
-          <input class="xwide text input" id="title" type="text" placeholder="What are you trying to achieve?" />
+          <input class="wide text input" id="text1" type="text" placeholder="First name" />
         </li>
         <li class="field">
-          <label class="inline" for="description">Description:</label>
-          <textarea class="input textarea" id="description" type="text" placeholder="Describe your goal." rows='4'></textarea>
+          <input class="wide password input" id="text2" type="password" placeholder="Last name" />
+        </li>
+              <li class="field">
+          <input class="wide password input" id="text2" type="password" placeholder="Email address" />
         </li>
         <li class="field">
-          <label class='inline'>Status:</label>
-          <label class="radio" for="radio1">
-            <input name="radio" id="radio1" value="1" type="radio" checked="checked">
-            <span></span>In progress
-          </label>
-          <label class="radio" for="radio2">
-            <input name="radio" id="radio2" value="2" type="radio">
-            <span></span> Completed
-          </label>
+          <input class="wide password input" id="text2" type="password" placeholder="Password" />
         </li>
         <li class="field">
-          <label>Estimated completion date:</label>
-          <ul class='date'>
-            <li><input class='xnarrow text input' placeholder='DD'></li>
-            <li><input class='xnarrow text input' placeholder='MM'></li>
-            <li><input class='xnarrow text input' placeholder='YYYY'></li>
-          </ul>
+          <label class="inline" for="description">Bio</label>
+          <textarea class="input textarea" id="description" type="text" placeholder="Write a few words about yourself!" rows='4'></textarea>
         </li>
         <li>
           <div class="medium primary btn"><a href="dashboard.html">Submit</a></div>
@@ -85,54 +148,73 @@
     </div>
   </div>
 
-  <div class='row'>
-    <div class='four columns push_one image photo'>
-      <img src="img/success.png"/>
+  <div class='row bio'>
+    <div class='row'>
+      <div class='three columns push_one'>
+        <div class='profile-pic'>
+        <img src="img/success-square.png"/>
+      </div>
+      </div>
+      <div class='seven columns'>
+        <h2>Sam Willis</h2>
+        <p>Food truck tousled fap, biodiesel gastropub helvetica direct trade forage bespoke flexitarian seitan post-ironic sriracha master cleanse.</p>
+      </div>
     </div>
-    <div class='six columns'>
-      <h2>Mr. Success</h2>
-      <p>Food truck tousled fap, biodiesel gastropub helvetica direct trade forage bespoke flexitarian seitan post-ironic sriracha master cleanse.</p>
-      <ul class='inline'>
-        <li><a href="#"><i class='icon-rss'></i>Subscribe</a></li>
-        <li><a href="#"><i class='icon-mail'></i>Request address</a></li>
-        <li><a href="#"><i class='icon-tools'></i>Settings</a> </li>
-      </ul>
+    <div class='row buttons'>
+      <div class='four columns alpha button'>
+        <a href="#"><i class='icon-rss'></i>Subscribe</a>
+      </div>
+      <div class='four columns button'>
+        <a href="#"><i class='icon-location'></i>Request Address</a>
+      </div>
+      <div class='four columns omega button'>
+        <a href="#openModal6"><i class='icon-tools'></i>Settings</a>
+      </div>
     </div>
   </div>
 
   <div class='row'>
     <h3>Pending Accomplists</h3>
-    <div class='four columns alpha'>
-      <a href="viewList.html"><img src="img/success.png"/></a>
-      <h4>Run a marathon</h4>
-      <ul>
-        <li>Status: <span>In progress</span></li>
-        <li>End date: <span>10/06/2013</span></li>
-        <li>Rewards: <span>5 (3 left to earn)</span></li>
-      </ul>
-    </div>
-    <div class='four columns'>
-      <a href="viewList.html"><img src="img/success.png"/></a>
-      <h4>Run a marathon</h4>
-      <ul>
-        <li>Status: <span>In progress</span></li>
-        <li>End date: <span>10/06/2013</span></li>
-        <li>Rewards: <span>5 (3 left to earn)</span></li>
-      </ul>
-    </div>
-    <div class='four columns omega'>
-      <a href="viewList.html"><img src="img/success.png"/></a>
-      <h4>Run a marathon</h4>
-      <ul>
-        <li>Status: <span>In progress</span></li>
-        <li>End date: <span>10/06/2013</span></li>
-        <li>Rewards: <span>5 (3 left to earn)</span></li>
-      </ul>
+  </div>
+
+  <div class='container'>
+    <div class='row'>
+      <div class='four columns alpha'>
+        <a href="viewList.html"><img src="img/success.png"/></a>
+        <h4>Run a marathon</h4>
+        <ul>
+          <li>Status: <span>In progress</span></li>
+          <li>End date: <span>10/06/2013</span></li>
+          <li>Rewards: <span>5 (3 left to earn)</span></li>
+        </ul>
+      </div>
+      <div class='four columns'>
+        <a href="viewList.html"><img src="img/success.png"/></a>
+        <h4>Run a marathon</h4>
+        <ul>
+          <li>Status: <span>In progress</span></li>
+          <li>End date: <span>10/06/2013</span></li>
+          <li>Rewards: <span>5 (3 left to earn)</span></li>
+        </ul>
+      </div>
+      <div class='four columns omega'>
+        <a href="viewList.html"><img src="img/success.png"/></a>
+        <h4>Run a marathon</h4>
+        <ul>
+          <li>Status: <span>In progress</span></li>
+          <li>End date: <span>10/06/2013</span></li>
+          <li>Rewards: <span>5 (3 left to earn)</span></li>
+        </ul>
+      </div>
     </div>
   </div>
 
   <div class='row'>
     <h3>Complete Accomplists</h3>
+  </div>
+
+<div class='container'>
+  <div class='row'>
     <div class='four columns alpha'>
       <a href="viewList.html"><img src="img/success.png"/></a>
       <h4>Run a marathon</h4>
@@ -161,6 +243,14 @@
       </ul>
     </div> 
   </div>
+</div>
+
+
+  <footer class='container'>
+    <div class='row'>
+      <p>&copy; Accomplist</p>
+    </div>
+  </footer>
 
   <!-- JavaScript at the bottom for fast page loading -->
 

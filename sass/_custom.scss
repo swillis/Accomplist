@@ -1,6 +1,6 @@
 // Your custom SCSS should be written here...
 
-// Modals. ggg
+// Modals.
 
 .modalDialog {
   position: fixed;
@@ -22,9 +22,12 @@
   pointer-events: auto;
 }
 
+.content {
+  max-height: 450px;
+  overflow-y: auto;
+}
+
 .modalDialog > div {
-  // max-height: 200px;
-  // overflow-y: auto;
   width: 600px;
   position: relative;
   margin: 10% auto;
@@ -56,6 +59,10 @@
 
 // CSS
 
+body {
+
+}
+
 ul.inline {
 
   li {
@@ -72,6 +79,80 @@ li {
 
 }
 
+.navbar {
+
+  .title {
+    // color: #f1f1f3;
+    font-size: 34px;
+    letter-spacing: -3;
+    font-weight: 400;
+  }
+
+  .icon-menu {
+    // color: #5e6d7f;
+    margin-right: 10px;
+    font-size: 1em;
+  }
+}
+
+.bio {
+  h2 {
+    margin-top: 30px;
+    font-weight: 400;
+  }
+
+  .profile-pic {
+    width: 180px;
+    height: 180px;
+    @include border-radius(100px);
+    overflow: hidden;
+    border: 5px solid #f1f1f3;
+  }
+
+  background: #ffffff;
+  padding-top: 20px;
+  @include border-radius(5px);
+  @include box-shadow(rgba(0,0,0,0.25) 0px 1px 3px);
+
+  .buttons {
+    margin-top: 20px;
+    border-top: 1px solid #d5d9de;
+    background: #f9fafc;
+    @include border-radius(0px 0px 5px 5px);
+    overflow: hidden;
+
+    i {
+      display: block;
+      font-size: 1.7em;
+    }
+  }
+
+  .button {
+    padding: 10px;
+    text-align: center;
+    // margin-left: 0;
+    // width: 313px !important;
+  }
+
+  .button:hover {
+    background-color: white;
+
+    a {
+      color: $body-link-color;
+    }
+  }
+
+  .button.alpha {
+    border-right: 1px solid #d5d9de;
+    @include border-radius(0px 0px 0px 5px);
+  }
+
+  .button.omega {
+    border-left: 1px solid #d5d9de;
+    @include border-radius(0px 0px 5px 0px);
+  }
+}
+
 .item {
   height: 100px;
   width: 100px;
@@ -80,4 +161,9 @@ li {
 
 .listDescription {
   border-bottom: 1px solid whitesmoke;
+}
+
+footer {
+  text-align: center;
+  background: whitesmoke;
 }
