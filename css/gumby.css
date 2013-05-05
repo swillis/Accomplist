@@ -1830,18 +1830,28 @@ ul.date li { display: inline; }
 .navbar .title { font-size: 34px; letter-spacing: -3; font-weight: 400; }
 .navbar .icon-menu { margin-right: 10px; font-size: 1em; }
 
-.bio { background: #ffffff; padding-top: 20px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 3px; -moz-box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 3px; box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 3px; }
-.bio h2 { margin-top: 30px; font-weight: 400; }
+.bio { background: #ffffff; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 3px; -moz-box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 3px; box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 3px; }
+.bio h2, .bio h3 { margin-top: 25px; font-weight: 400; }
 .bio .profile-pic { width: 180px; height: 180px; -webkit-border-radius: 100px; -moz-border-radius: 100px; -ms-border-radius: 100px; -o-border-radius: 100px; border-radius: 100px; overflow: hidden; border: 5px solid #f1f1f3; }
+.bio .item-pic { width: 100px; height: 100px; -webkit-border-radius: 100px; -moz-border-radius: 100px; -ms-border-radius: 100px; -o-border-radius: 100px; border-radius: 100px; overflow: hidden; border: 5px solid #f1f1f3; margin-right: 20px; }
 .bio .buttons { margin-top: 20px; border-top: 1px solid #d5d9de; background: #f9fafc; -webkit-border-radius: 0px 0px 5px 5px; -moz-border-radius: 0px 0px 5px 5px; -ms-border-radius: 0px 0px 5px 5px; -o-border-radius: 0px 0px 5px 5px; border-radius: 0px 0px 5px 5px; overflow: hidden; }
-.bio .buttons i { display: block; font-size: 1.7em; }
+.bio .buttons i { display: block; font-size: 1.7em; margin: 5px; }
+.bio .header-img { margin-top: 20px; }
 .bio .button { padding: 10px; text-align: center; }
 .bio .button:hover { background-color: white; }
 .bio .button:hover a { color: #5e6d7f; }
 .bio .button.alpha { border-right: 1px solid #d5d9de; -webkit-border-radius: 0px 0px 0px 5px; -moz-border-radius: 0px 0px 0px 5px; -ms-border-radius: 0px 0px 0px 5px; -o-border-radius: 0px 0px 0px 5px; border-radius: 0px 0px 0px 5px; }
 .bio .button.omega { border-left: 1px solid #d5d9de; -webkit-border-radius: 0px 0px 5px 0px; -moz-border-radius: 0px 0px 5px 0px; -ms-border-radius: 0px 0px 5px 0px; -o-border-radius: 0px 0px 5px 0px; border-radius: 0px 0px 5px 0px; }
 
-.item { height: 100px; width: 100px; display: inline; }
+.pending-title { text-align: center; margin-top: 20px; margin-bottom: 20px; }
+.pending-title h3, .pending-title i { color: #5e6d7f; font-weight: 400; text-shadow: 0px 1px 1px white; }
+.pending-title i { font-size: 3em; margin-bottom: 10px; margin-top: 20px; }
+
+.list { overflow: hidden; padding: 20px; }
+.list h4 { font-weight: 400; }
+.list ul li { display: block; background: green; }
+
+.item { height: 100px; width: 100px; }
 
 .listDescription { border-bottom: 1px solid whitesmoke; }
 
