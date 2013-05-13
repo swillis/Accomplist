@@ -143,11 +143,15 @@ li {
   .button {
     padding: 10px;
     text-align: center;
-    // margin-left: 0;
-    // width: 313px !important;
   }
 
-  .button:hover {
+  .four.columns.button {
+    margin-left: 0px;
+    width: 313px;
+    cursor: pointer;
+  }
+
+  .button.head:hover {
     background-color: white;
 
     a {
@@ -166,7 +170,7 @@ li {
   }
 }
 
-.pending-title {
+.title-header {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -185,18 +189,58 @@ li {
 }
 
 .list {
+  font-size: 10px;
+  padding-top: 20px;
+  border: none;
   overflow: hidden;
-  padding: 20px;
+  cursor: pointer;
 
   h4 {
     font-weight: 400;
+    margin-left: 20px;
   }
 
-  ul {
-    li {
-      display: block;
-      background: green;
-    }
+  p {
+    font-size: 14px;
+    color: white;
+    font-weight: 700;
+    margin-top: 5px;
+  }
+
+  .state {
+  display: block;
+  }
+
+  .buttons {
+    margin-bottom: -10px;
+    border: none;
+    margin-top: 10px;
+  }
+
+  .button.alpha, .button.omega {
+    border: none;
+  }
+
+  .four.columns.button {
+    width: 100px;
+    margin-left: 0px;
+  }
+
+  .status {
+    background: #2fbca6;
+  }
+
+  .date {
+   background: #f47640; 
+  }
+
+  .rewards {
+    background: #2bbad3;
+  }
+
+  .item-pic {
+    margin-bottom: 10px;
+    margin-left: 10px;
   }
 }
 
@@ -211,5 +255,15 @@ li {
 
 footer {
   text-align: center;
-  background: whitesmoke;
+  background: $navbar-color;
+  margin-top: 20px;
+  padding-top: 10px;
+
+  p {
+    color: $navbar-link-color;
+  }
+
+  .row {
+    padding-top: 10px;
+  }
 }
