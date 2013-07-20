@@ -221,23 +221,6 @@ li {
     border: none;
   }
 
-  .four.columns.button {
-    width: 100px;
-    margin-left: 0px;
-  }
-
-  .status {
-    background: #2fbca6;
-  }
-
-  .date {
-   background: #f47640; 
-  }
-
-  .rewards {
-    background: #2bbad3;
-  }
-
   .item-pic {
     margin-bottom: 10px;
     margin-left: 10px;
@@ -251,6 +234,29 @@ li {
 
 .listDescription {
   border-bottom: 1px solid whitesmoke;
+}
+
+table {
+
+  td {
+    padding: 10px;
+    border-top: 1px solid #2d373f;
+  }
+
+  td.progress {
+    color: #FF8878;
+    background-color: #2d373f;
+    font-size: 2em;
+    // border-right: 1px solid #d5d9de;
+  }
+
+  td.result {
+    color: #2d373f;
+    background-color: #f9fafc;
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 footer {
